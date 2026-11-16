@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="upload-container">
+      <h2>Upload an Image</h2>
+
+      <div class="drop-zone" id="drop-zone">
+        <p>Click or Drag & Drop an image here</p>
+        <input type="file" id="file-input" accept="image/*" hidden />
+      </div>
+
+      <button class="upload-btn" id="upload-btn">Upload File</button>
+
+      <div class="status-message" id="status-message"></div>
+
+      <div class="preview-container" id="preview-container">
+        <p>Uploaded Image:</p>
+        <img id="uploaded-image" src="" alt="Uploaded" />
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
